@@ -1,0 +1,2 @@
+export const FLICKER_API_KEY = "24195e3c4c81525c12f5a36e9b6e9938";
+export const FLICKER_API_SECRET = "912ba00fd0b20a7b";

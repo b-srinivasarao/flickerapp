@@ -1,0 +1,158 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.containerImg {
+  position: relative;
+}
+
+.containerImg img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: 4px;
+  right: 2%;
+  text-align: center;
+  background-color: 'black';
+}
+
+.containerImg:hover .image {
+  opacity: 0.3;
+}
+
+.containerImg:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  display: flex;
+}
+.slider {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+}
+
+.image {
+  width: 800px;
+  height: 300px;
+  /* border-radius: 10px; */
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+  display: inline-block;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+.card{
+  margin-left: 30;
+  padding: 10;
+}
+.user{
+
+}
+.userdetails{
+  width: 800px;
+  margin-left: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.profile{
+  margin-right: 10px;
+}
+.profile_img{
+  border-radius: 20px;
+
+}
+.user_title,.description{
+  font-size: 12px;
+  /* display: inline-block; */
+  text-align: left;
+  line-height: 14px;
+  white-space: pre-wrap;
+}
+.comment_profile{
+  display: flex;
+  flex-direction: row;
+
+}
+.cmmt_content{
+  white-space: pre-wrap;
+
+}
